@@ -1,8 +1,32 @@
-.tun{
-    background-color: black;
-    color: white;
-}
-.kun{
-    background-color: yellow;
-    color: red;
-}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.light-mode {
+    --bg-color: #fff;
+    --text-color: #000;
+  }
+  
+  body.dark-mode {
+    --bg-color: #333;
+    --text-color: #fff;
+  }
+  
+  .nav-items{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-item{
+    list-style-type: none;
+  }
+  .nav-link{
+    text-decoration: none;
+  }
+  .btn{
+
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }

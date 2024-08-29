@@ -1,14 +1,7 @@
-import React, { useContext } from 'react'
-import { UserContext } from "./MyContext"
-import './style.css'
+import React from 'react'
 
-function About() {
-    const {user, data} = useContext(UserContext)
-    return (
-        <>
-            <h1 className={user ? "kun" : "tun"}>About page</h1>
-        </>
-    );
+export const About = () => {
+  return (
+    <div>About</div>
+  )
 }
-
-export default About;
